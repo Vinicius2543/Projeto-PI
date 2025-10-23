@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://backend-pi-20-production.up.railway.app:8080/receitas';
+const API_BASE_URL = 'https://backend-pi-20-production.up.railway.app:8080/receitas';
 
 export const getAllRecipes = async () => {
   const response = await axios.get(API_BASE_URL);
