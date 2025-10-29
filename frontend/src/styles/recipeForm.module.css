@@ -354,3 +354,41 @@
   color: #fff;
   border: 1px solid #555;
 }
+
+/* --- Ajuste iphone 16 --- */
+@media (max-width: 430px) {
+  .radioGroup {
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .radioGroup label {
+    flex: 1 1 45%; 
+    font-size: 14px;
+  }
+
+  .recipeTypeLabel {
+    font-size: 15px;
+  }
+
+  .buttonContainer {
+    width: 90%;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .buttonContainer button {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .submitButton,
+  .backButton,
+  .deleteButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
