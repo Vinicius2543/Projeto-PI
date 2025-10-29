@@ -129,7 +129,7 @@ function RecipeEditForm() {
       try {
         const img = new Image();
         img.crossOrigin = 'anonymous';
-        img.src = typeof image === 'string' && !image.startsWith('blob') ? `http://localhost:8080${image}` : image;
+        img.src = typeof image === 'string' && !image.startsWith('blob') ? `https://backend-pi-20-production.up.railway.app${image}` : image;
         await new Promise((resolve) => {
           img.onload = () => {
             const canvas = document.createElement('canvas');
@@ -210,7 +210,7 @@ function RecipeEditForm() {
         <div className={styles.rightColumn}>
           <div className={styles.imageUploadContainer}>
             <div className={styles.imagePreviewWrapper}>
-              {image && <img src={typeof image === 'string' && !image.startsWith('blob') ? `http://localhost:8080${image}` : image} alt="Preview" className={styles.imagePreview} />}
+              {image && <img src={typeof image === 'string' && !image.startsWith('blob') ? `https://backend-pi-20-production.up.railway.app${image}` : image} alt="Preview" className={styles.imagePreview} />}
             </div>
             <input className={styles.inputWrapper} type="file" accept="image/*" onChange={handleImageChange} />
           </div>
