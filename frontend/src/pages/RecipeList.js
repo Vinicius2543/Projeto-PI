@@ -68,7 +68,7 @@ function RecipeList() {
                 onClick={() => navigate(`/editar-receita/${recipe.id}`)}
                 style={{ cursor: "pointer" }}
               >
-                <img src={`http://localhost:8080${recipe.imagemUrl}`} alt="Receita" />
+                <img src={`https://backend-pi-20-production.up.railway.app${recipe.imagemUrl}`} alt="Receita" />
                 <div className={styles.recipeInfo}>
                   <span
                     className={
