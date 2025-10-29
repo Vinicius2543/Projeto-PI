@@ -362,7 +362,7 @@
     flex-direction: column; 
     align-items: flex-start;
     gap: 6px;
-    width: 800%;
+    width: 80%;
   }
 
   .radioGroup label {
