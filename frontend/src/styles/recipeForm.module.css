@@ -371,9 +371,6 @@
     justify-content: flex-start;
     gap: 8px;
     width: 20%;
-    background-color: #fafafa;
-    border: 1px solid #ddd;
-    border-radius: 8px;
     padding: 8px 10px;
     font-size: 15px;
     box-sizing: border-box;
