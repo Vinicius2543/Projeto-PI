@@ -1,3 +1,12 @@
+#root{
+  height: 100%;
+}
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% da tela */
+}
+
 /* ---------- LIGHT MODE ---------- */
 body.light {
   background: url('../img/background_chef.jpg') center center / cover no-repeat fixed;
@@ -51,7 +60,8 @@ body.dark .footer {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 500px;
+  padding: 20px 0 40px; /* espaçamento interno leve */
+  box-sizing: border-box;
 }
 
 /* ---------- TOGGLE BUTTON ---------- */

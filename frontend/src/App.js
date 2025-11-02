@@ -14,20 +14,22 @@ import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
-    <ThemeProvider>
-      <Router>
-        <Navbar />
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<RecipeList />} />
-            <Route path="/nova-receita" element={<RecipeForm />} />
-            <Route path="/editar-receita/:id" element={<RecipeEditForm />} />
-          </Routes>
-        </div>
-        <Footer />
-        <ToastContainer position="top-right" autoClose={3000} />
-      </Router>
-    </ThemeProvider>
+    <div class="appWrapper">
+      <ThemeProvider>
+        <Router>
+          <Navbar />
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<RecipeList />} />
+              <Route path="/nova-receita" element={<RecipeForm />} />
+              <Route path="/editar-receita/:id" element={<RecipeEditForm />} />
+            </Routes>
+          </div>
+          <Footer />
+          <ToastContainer position="top-right" autoClose={3000} />
+        </Router>
+      </ThemeProvider>
+    </div>
   );
 }
 
